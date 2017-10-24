@@ -53,60 +53,48 @@
             <label class="thirteen labelwidth">Original Due Date:</label>
             <input type="date" id="date" class="fourteen inputwidth">
         </article>
+        <button id="saveButt" style="display: inline" class="headerButton " aria-label="Save">Save</button>
+        <button id="cancelButt" class="headerButton" aria-label="Cancel">Cancel</button>
     </section>
+   <div class="container">
+       <hr />
+   </div>
 
-    <!-- include javascript and css at the bottom to decrease response time -->
+    <div class="container">
+        <div class="card card-body bg-light">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <span class="label">Date: </span> <span id="itemDate">10/24/2017</span>
+                </div>
+                <div class="col-6 col-md-4">
+                    <span class="label">Rank:</span> <span id="rank">1</span>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <span class="label">Project:</span> <span id="projectCategory">Project</span> - <span id="projectSubCategory">Order Form 2.0 Project</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <span class="label">Hours: </span> <span id="hours">3.5</span>
+                </div>
+                <div class="col-6 col-md-4">
+                    <span class="label">Due Date: </span> <span id="originalDueDate">10/31/2017</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <span class="label">Description: </span> <span id="description">Convert TextBox to Drop Down List for Order Form</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/DisplayTop3.css" rel="stylesheet">
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="./css/AddTop3.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="./js/scripts.js"></script>
-    <button id="saveButt" style="display: inline" class="headerButton" aria-label="Save">Save</button>
-    <button id="cancelButt" class="headerButton" aria-label="Cancel">Cancel</button>
-
-    <main class="main">
-        <form id="addTop3">
-            <link rel="import" href="/path/to/template.html">
-        </form>
-        <form id="top3Summary">
-            <div class="divTable">
-                <h1 align="center">Top 3 Weekly Summary</h1>
-                <div class="headRow">
-                    <div class="divCell">TaskDate</div>
-                    <div class="divCell">Rank</div>
-                    <div class="divCell">Hours</div>
-                    <div class="divCell">Ticket</div>
-                    <div class="divCell">Project</div>
-                    <div class="divCell">Description</div>
-                    <div class="divCell">OrgDueDate</div>
-                </div><br/>
-                <div class="divRow">
-                    <div class="weeklyTotal">
-                        Weekly Total:
-                        <div class="divCell"></div>
-                        <div class="hours"></div>
-                        <div class="divCell"></div>
-                        <div class="divCell"></div>
-                        <div class="divCell"></div>
-                        <div class="divCell"></div>
-                        <div class="divCell"></div>
-                    </div>
-                </div>
-                <div class="divRow">
-                        <div class="dailyTotal">
-                            Daily Total:
-                            <div class="divCell"></div>
-                            <div class="hours"></div>
-                            <div class="divCell"></div>
-                            <div class="divCell"></div>
-                            <div class="divCell"></div>
-                            <div class="divCell"></div>
-                            <div class="divCell"></div>
-                        </div>
-               </div>
-            </div>
-        </form>
-    </main>
-    <footer>
-    </footer>
 
     <link rel="stylesheet" href="./css/DailyTableFormat.css">
 </body>
