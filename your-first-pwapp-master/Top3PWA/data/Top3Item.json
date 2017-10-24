@@ -1,0 +1,15 @@
+{ // Top3
+  "top3Id": 1,
+  "username": "john.doe",
+  "itemDate": "2017-10-24T00:00:00+00:00",
+  "rank": 1,
+  "ticketNumber": "12345678",
+  "description": "Convert TextBox to Drop Down List for Order Form",
+  "projectCategory": "Project",
+  "projectSubCategory": "Order Form 2.0 Project",
+  "hours": 7.5,
+  "empFollowup": "",
+  "originalDueDate": "2017-10-29T12:52:18.3438137+00:00",
+  "revisedDueDate": "2017-11-01T12:52:18.3438137+00:00",
+  "revisedDueDateReason": "Needed more time"
+}
