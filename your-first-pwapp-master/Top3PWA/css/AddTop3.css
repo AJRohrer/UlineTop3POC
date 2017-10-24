@@ -1,0 +1,82 @@
+.standardFont{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: blue;
+}
+
+/*CSS Grid Start*/
+.gridwrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5em;
+    border: 1px solid;
+    width: 25em;
+  }
+
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .two { 
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .three {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .four {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .five {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .six {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .seven {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .eight {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .nine {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .ten {
+    grid-column: 2;
+    grid-row: 5;
+  }
+  /*CSS Grid End*/
+
+  .labelwidth{
+      width:10em;
+  }
+
+  .inputwidth{
+      width:30em;
+  }
+
+  .centerthis{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .formwidth{
+      width: 35em;
+  }

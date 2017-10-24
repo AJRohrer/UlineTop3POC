@@ -16,7 +16,7 @@
             <input class="four inputwidth" type="text" placeholder="Enter Ticket Number...">
 
             <label class="five labelwidth">Category:</label>
-            <select class="six inputwidth">
+            <select class="six inputwidth" onchange="popSubCategory()">
                 <option selected="selected">Enhancement</option>
                 <option>Admin</option>
                 <option>Project</option>
@@ -24,7 +24,7 @@
             </select>
 
             <label class="seven labelwidth">Sub Category:</label>
-            <select class="eight inputwidth">
+            <select id="subcatselect" class="eight inputwidth">
                 <option selected="selected">Enhancement-WEB</option>
                 <option>Enhancement-CRE</option>
                 <option>Enhancement-FIN</option>
@@ -39,6 +39,7 @@
         </article>
     </section>
 
-    <link rel="stylesheet" href="AddTop3.css" </body>
+    <link rel="stylesheet" href="./css/AddTop3.css" </body>
+    <script type="javascript" src="./js/scripts.js"></script>
 
 </html>
