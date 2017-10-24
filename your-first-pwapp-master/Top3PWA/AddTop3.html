@@ -16,7 +16,7 @@
             <input class="four inputwidth" type="text" placeholder="Enter Ticket Number...">
 
             <label class="five labelwidth">Category:</label>
-            <select class="six inputwidth" onchange="popSubCategory()">
+            <select id="mainCategory" class="six inputwidth" onchange="popSubCategory()">
                 <option selected="selected">Enhancement</option>
                 <option>Admin</option>
                 <option>Project</option>
@@ -34,12 +34,14 @@
                 <option>Holidays</option>
             </select>
 
-            <label class="nine labelwidth">Description:</label>
-            <input class="ten inputwidth" class="six" type="text" placeholder="Enter description...">
+            <label class="nine labelwidth">Hours:</label>
+            <select id="hours" class="ten inputwidth"></select>
         </article>
     </section>
+</body>
 
-    <link rel="stylesheet" href="./css/AddTop3.css" </body>
-    <script type="javascript" src="./js/scripts.js"></script>
+<!-- include javascript and css at the bottom to decrease response time -->
+<link rel="stylesheet" href="./css/AddTop3.css" </body>
+<script type="javascript" src="./js/scripts.js"></script>
 
 </html>
