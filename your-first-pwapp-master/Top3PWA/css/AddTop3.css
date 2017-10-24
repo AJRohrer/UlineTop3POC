@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5em;
-    border: 1px solid;
     width: 25em;
   }
 
@@ -81,6 +80,36 @@
   .fourteen{
     grid-column: 2;
     grid-row: 7;
+  }
+
+  .fifteen{
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .sixteen{
+    grid-column: 2;
+    grid-row: 8;
+  }
+
+  .seventeen{
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .eighteen{
+    grid-column: 2;
+    grid-row: 9;
+  }
+
+  .nineteen{
+    grid-column: 1;
+    grid-row: 10;
+  }
+
+  .twenty{
+    grid-column: 2;
+    grid-row: 10;
   }
   /*CSS Grid End*/
 

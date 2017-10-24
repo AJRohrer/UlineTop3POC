@@ -1,41 +1,32 @@
 function popSubCategory() {
     var jsonFileName = "";
-    $('#mainCategory').empty();
+    
     switch ($('#mainCategory').find(":selected").text()) {
         case "Enhancement":
-            jsonFileName = "Enhcategory.json";
+            jsonFileName = "./data/Enhcategory.json";
             break;
         case "Admin":
-            jsonFileName = "Admin.json";
+            jsonFileName = "./data/Admin.json";
             break;
         case "Project":
-            jsonFileName = "Project.json";
+            jsonFileName = "./data/Project.json";
             break;
         case "Service Request":
-            jsonFileName = "ServiceRequest.json";
+            jsonFileName = "./data/ServiceRequest.json";
             break;
         default:
             break;
     }
 
-    $.ajax({
-        url: jsonFileName,
-        type: 'POST',
-        dataType: 'json',
-        success: function (json) {
-            var first = true;
-            var optionText = "";
-            $.each(json, function (i, value) {
-                if (first){
-                    optionText = "<option selected=\"selected\"";
-                }
-                else{
-                    optionText = "<option>";
-                }
-                $('#subcatselect').append($(optionText).text(value).attr('value', value));
-                first = false;
-            });
+    $.getJSON(jsonFileName, function(json){
+
+        for (var i = 0; i < json.length; i++){
+            //do something
         }
+
+        $.each(json, function(index,item) {
+            $("#subcatselect").append("<option value=" + index + ">" + item + "</option>"); 
+        });
     });
 }
 
