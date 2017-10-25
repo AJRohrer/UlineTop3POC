@@ -54,7 +54,8 @@ $(document).ready(function(){
     $('#date').attr("value", dateString);
 });
 
-if ('serviceWorker' in navigator) {
+(function () {
+    if ('serviceWorker' in navigator) {
     navigator.serviceWorker
         .register('./service-worker.js')
         .then(function () { console.log('Service Worker Registered'); });

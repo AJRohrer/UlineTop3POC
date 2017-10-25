@@ -2,7 +2,7 @@
 var filesToCache = [
     '/',
     '/index.html',
-    '/scripts/scripts.js',
+    '/js/scripts.js',
     '/css/inline.css',
     '/css/bootstrap-reboot.css',
     '/css/bootstrap-reboot.css.map',
