@@ -1,6 +1,6 @@
-.standardFont{
+.standardFont {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     color: blue;
 }
 
@@ -10,134 +10,126 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: .5em;
     width: 25em;
-  }
+}
 
-  .one {
+.one {
     grid-column: 1;
     grid-row: 1;
-  }
+}
 
-  .two { 
+.two {
     grid-column: 2;
     grid-row: 1;
-  }
+}
 
-  .three {
+.three {
     grid-column: 1;
     grid-row: 2;
-  }
+}
 
-  .four {
+.four {
     grid-column: 2;
     grid-row: 2;
-  }
+}
 
-  .five {
+.five {
     grid-column: 1;
     grid-row: 3;
-  }
+}
 
-  .six {
+.six {
     grid-column: 2;
     grid-row: 3;
-  }
+}
 
-  .seven {
+.seven {
     grid-column: 1;
     grid-row: 4;
-  }
+}
 
-  .eight {
+.eight {
     grid-column: 2;
     grid-row: 4;
-  }
+}
 
-  .nine {
+.nine {
     grid-column: 1;
     grid-row: 5;
-  }
+}
 
-  .ten {
+.ten {
     grid-column: 2;
     grid-row: 5;
-  }
+}
 
-  .eleven{
+.eleven {
     grid-column: 1;
     grid-row: 6;
-  }
+}
 
-  .twelve{
+.twelve {
     grid-column: 2;
     grid-row: 6;
-  }
+}
 
-  .thirteen{
+.thirteen {
     grid-column: 1;
     grid-row: 7;
-  }
+}
 
-  .fourteen{
+.fourteen {
     grid-column: 2;
     grid-row: 7;
-  }
+}
 
-  .fifteen{
+.fifteen {
     grid-column: 1;
     grid-row: 8;
-  }
+}
 
-  .sixteen{
+.sixteen {
     grid-column: 2;
     grid-row: 8;
-  }
+}
 
-  .seventeen{
+.seventeen {
     grid-column: 1;
     grid-row: 9;
-  }
+}
 
-  .eighteen{
+.eighteen {
     grid-column: 2;
     grid-row: 9;
-  }
+}
 
-  .nineteen{
+.nineteen {
     grid-column: 1;
     grid-row: 10;
-  }
+}
 
-  .twenty{
+.twenty {
     grid-column: 2;
     grid-row: 10;
-  }
+}
 
-  .twentyone{
-    grid-column: 1;
-    grid-row: 11;
+.formbutton {
     border-radius: 25px;
-  }
+}
+/*CSS Grid End*/
 
-  .twentytwo{
-    grid-column: 2;
-    grid-row: 11;
-    border-radius: 25px;
-  }
-  /*CSS Grid End*/
+.labelwidth {
+    width: 10em;
+}
 
-  .labelwidth{
-      width:10em;
-  }
+.inputwidth {
+    /*width:30em;*/
+}
 
-  .inputwidth{
-      /*width:30em;*/
-  }
-
-  .centerthis{
+.centerthis {
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  .formwidth{
-      width: 35em;
-  }
+.formwidth {
+    width: 35em;
+}

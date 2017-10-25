@@ -2,10 +2,10 @@
 var filesToCache = [
     '/',
     '/index.html',
+    '/js/jquery-3.2.1.min.js',
+    '/js/popper.min.js',
     '/js/scripts.js',
     '/js/bootstrap.min.js',
-    '/js/jquery-3.2.1.min.js',
-    '/js/scripts.js',
     '/js/bootstrap.bundle.min.js',
     '/css/inline.css',
     '/css/bootstrap-reboot.css',

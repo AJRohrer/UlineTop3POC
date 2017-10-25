@@ -10,5 +10,8 @@
   },
   "author": {
     "name": "Andrew.Rohrer"
+  },
+  "dependencies": {
+    "popper.js": "^1.12.6"
   }
 }
