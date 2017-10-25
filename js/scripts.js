@@ -57,7 +57,7 @@ $(document).ready(function(){
 (function () {
     if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('./Top3PWA/service-worker.js')
+        .register('./service-worker.js')
         .then(function () { console.log('Service Worker Registered'); });
 }
 })();
