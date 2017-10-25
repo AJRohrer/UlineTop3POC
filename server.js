@@ -3,7 +3,7 @@ var app = express();
 
 /* serves main page */
 app.get("/", function (req, res) {
-    res.sendfile('Top3PWA/index.html')
+    res.sendfile('index.html')
 });
 
 app.post("/user/add", function (req, res) {
