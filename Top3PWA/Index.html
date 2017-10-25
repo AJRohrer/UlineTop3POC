@@ -1,13 +1,15 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Entry Top 3</title>
-    <link rel="stylesheet" type="text/css" href="/Top3PWA/css/inline.css">
+    <link rel="stylesheet" type="text/css" href="css/inline.css">
 </head>
+
 <body class="standardFont centerthis">
     <header class="header">
         <h1 class="header_title" align="center">Time Entry Top 3</h1>
@@ -18,97 +20,106 @@
 
     <section class="formwidth centerthis">
         <h1 style="text-align: center;" class="centerthis">Add Top 3 Item</h1>
-        <article class="gridwrapper centerthis card">
-            <label class="one labelwidth">Description:</label>
-            <input class="two inputwidth" type="text" placeholder="Enter description...">
 
-            <label class="three labelwidth">Ticket Number:</label>
-            <input class="four inputwidth" type="text" placeholder="Enter Ticket Number...">
+        <article>
+            <form class="gridwrapper centerthis card">
+                <label class="one labelwidth">Description:</label>
+                <input class="two inputwidth" type="text" placeholder="Enter description...">
 
-            <label class="five labelwidth">Category:</label>
-            <select id="mainCategory" class="six inputwidth" onchange="popSubCategory()">
-                <option selected="selected">Enhancement</option>
-                <option>Admin</option>
-                <option>Project</option>
-                <option>Service Request</option>
-            </select>
+                <label class="three labelwidth">Ticket Number:</label>
+                <input class="four inputwidth" type="text" placeholder="Enter Ticket Number...">
 
-            <label class="seven labelwidth">Sub Category:</label>
-            <select id="subcatselect" class="eight inputwidth">
-                <option selected="selected">Enhancement-WEB</option>
-                <option>Enhancement-CRE</option>
-                <option>Enhancement-FIN</option>
-                <option>Enhancement-CIR</option>
-                <option>PTO</option>
-                <option>General Admin</option>
-                <option>Holidays</option>
-            </select>
+                <label class="five labelwidth">Category:</label>
+                <select id="mainCategory" class="six inputwidth" onchange="popSubCategory()">
+                    <option selected="selected">Enhancement</option>
+                    <option>Admin</option>
+                    <option>Project</option>
+                    <option>Service Request</option>
+                </select>
 
-            <label class="nine labelwidth">Hours:</label>
-            <select id="hours" class="ten inputwidth"></select>
+                <label class="seven labelwidth">Sub Category:</label>
+                <select id="subcatselect" class="eight inputwidth">
+                    <option selected="selected">Enhancement-WEB</option>
+                    <option>Enhancement-CRE</option>
+                    <option>Enhancement-FIN</option>
+                    <option>Enhancement-CIR</option>
+                    <option>PTO</option>
+                    <option>General Admin</option>
+                    <option>Holidays</option>
+                </select>
 
-            <label class="eleven labelwidth">Date:</label>
-            <input type="date" id="date" class="twelve inputwidth">
+                <label class="nine labelwidth">Hours:</label>
+                <select id="hours" class="ten inputwidth"></select>
 
-            <label class="thirteen labelwidth">Original Due Date:</label>
-            <input type="date" id="date" class="fourteen inputwidth">
+                <label class="eleven labelwidth">Date:</label>
+                <input type="date" id="date" class="twelve inputwidth">
 
-            <label class="fifteen labelwidth">Revised Due Date:</label>
-            <input type="date" id="date" class="sixteen inputwidth">
+                <label class="thirteen labelwidth">Original Due Date:</label>
+                <input type="date" id="date" class="fourteen inputwidth">
 
-            <label class="seventeen labelwidth">Revised Reason:</label>
-            <input class="eighteen inputwidth" type="text" placeholder="Enter reason...">
+                <label class="fifteen labelwidth">Revised Due Date:</label>
+                <input type="date" id="date" class="sixteen inputwidth">
 
-            <label class="nineteen labelwidth">Employee Followup:</label>
-            <input class="twenty inputwidth" type="text" placeholder="Enter followup description...">
+                <label class="seventeen labelwidth">Revised Reason:</label>
+                <input class="eighteen inputwidth" type="text" placeholder="Enter reason...">
 
-            <button id="cancelButt" class="headerButton twentyone" aria-label="Cancel">Cancel</button>
-            <button id="saveButt" style="display: inline" class="headerButton twentytwo" aria-label="Save">Save</button>
-            
+                <label class="nineteen labelwidth">Employee Followup:</label>
+                <input class="twenty inputwidth" type="text" placeholder="Enter followup description...">
 
+                <button id="cancelButt" class="headerButton twentyone" aria-label="Cancel">Cancel</button>
+                <button id="saveButt" class="headerButton twentytwo" aria-label="Save" type="Submit">Save</button>
+            </form>
         </article>
-        
+
     </section>
-   <div class="container">
-       <hr />
-   </div>
+    <div class="container">
+        <hr />
+    </div>
 
     <div class="container">
         <div class="card card-body bg-light">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4">
-                    <span class="label">Date: </span> <span id="itemDate">10/24/2017</span>
+                    <span class="label">Date: </span>
+                    <span id="itemDate">10/24/2017</span>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
-                    <span class="label">Rank:</span> <span id="rank">1</span>
+                    <span class="label">Rank:</span>
+                    <span id="rank">1</span>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4">
-                    <span class="label">Project:</span> <span id="projectCategory">Project</span> - <span id="projectSubCategory">Order Form 2.0 Project</span>
+                    <span class="label">Project:</span>
+                    <span id="projectCategory">Project</span> -
+                    <span id="projectSubCategory">Order Form 2.0 Project</span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4">
-                    <span class="label">Hours: </span> <span id="hours">3.5</span>
+                    <span class="label">Hours: </span>
+                    <span id="hours">3.5</span>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4">
-                    <span class="label">Due Date: </span> <span id="originalDueDate">10/31/2017</span>
+                    <span class="label">Due Date: </span>
+                    <span id="originalDueDate">10/31/2017</span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-12">
-                    <span class="label">Description: </span> <span id="description">Convert TextBox to Drop Down List for Order Form</span>
+                    <span class="label">Description: </span>
+                    <span id="description">Convert TextBox to Drop Down List for Order Form</span>
                 </div>
             </div>
         </div>
     </div>
-    <link href="./Top3PWA/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./Top3PWA/css/DisplayTop3.css" rel="stylesheet">
-    <script src="./Top3PWA/js/bootstrap.min.js"></script>
-    <script src="./Top3PWA/js/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" href="./Top3PWA/css/AddTop3.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/DisplayTop3.css" rel="stylesheet">
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/AddTop3.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="./Top3PWA/js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
-    <link rel="stylesheet" href="./Top3PWA/css/DailyTableFormat.css">
+    <link rel="stylesheet" href="css/DailyTableFormat.css">
 </body>
+
 </html>
