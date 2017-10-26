@@ -11,7 +11,6 @@ var filesToCache = [
     '/css/bootstrap-reboot.min.css',
     '/css/DailyTableFormat.css',
     '/css/DisplayTop3.css',
-    '/css/inline.css',
     '/css/AddTop3.css',
     '/css/bootstrap.min.css',
     '/css/bootstrap-grid.min.css',
