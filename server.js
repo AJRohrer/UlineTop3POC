@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/user/add", function (req, res) {
-    var top3Info = req.body.hours;
+    var top3Info = req.body;
     console.log(top3Info)
 
     var obj = new Object();
@@ -41,7 +41,7 @@ app.post("/user/add", function (req, res) {
             });
         }
     });
-    res.send('Hello');
+    res.send(json);
 });
 
 /* serves all the static files */
