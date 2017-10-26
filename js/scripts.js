@@ -97,7 +97,7 @@ form.onsubmit = function (e) {
 };
 
 const Top3Item = ({ itemDate, rank, projectCategory, projectSubCategory, hours, originalDueDate, description }) => `
-    <div class="container" >
+    <div class="container  my-2" >
         <div class="card card-body bg-light">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4">
