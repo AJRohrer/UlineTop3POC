@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var bodyParser = require('body-parser');
 
 /* serves main page */
 app.get("/", function (req, res) {
@@ -7,7 +8,8 @@ app.get("/", function (req, res) {
 });
 
 app.post("/user/add", function (req, res) {
-    /* some server side logic */
+    var top3Info = req.body.data;
+    console.log(top3Info)
     res.send("OK");
 });
 
