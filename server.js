@@ -33,6 +33,7 @@ app.post("/user/add", function (req, res) {
             var length = obj.Top3s.length - 1;
             var lastElem = obj.Top3s[length].top3Id + 1;
             top3Info.top3Id = lastElem;
+            top3Info.rank = lastElem;
             obj.Top3s.push(top3Info);
             json = JSON.stringify(obj, null, '\t');
             fs.writeFile('./data/Top3List.json', json, 'utf8', function (err) {
