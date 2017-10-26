@@ -49,7 +49,33 @@ $(document).ready(function () {
     var dateString = '';
     dateString = new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate();
     $('#itemDate').val(dateString);
+
+    var chart = new CanvasJS.Chart("chartContainer",
+	{
+		title:{
+			text: "Top 3 Time Allocation"
+		},
+		legend: {
+			maxWidth: 350,
+			itemWidth: 120
+		},
+		data: [
+		{
+			type: "pie",
+			showInLegend: true,
+			legendText: "{indexLabel}",
+			dataPoints: [
+				{ y: 1, indexLabel: "Service Request" },
+				{ y: 3, indexLabel: "Enhancement-WEB" },
+				{ y: 1, indexLabel: "PTO" },
+				{ y: 1, indexLabel: "General Admin"}
+			]
+		}
+		]
+	});
+	chart.render();
 });
+
 
 (function () {
     if ('serviceWorker' in navigator) {

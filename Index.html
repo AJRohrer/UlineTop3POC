@@ -33,7 +33,7 @@
                     <a data-toggle="collapse" href="#collapseTwo" class="nav-link">View Week</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Time Report</a>
+                    <a data-toggle="collapse" href="#collapseThree" class="nav-link">Time Report</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Add to Home Screen</a>
@@ -150,21 +150,30 @@
                 <div class="card-header" role="tab" id="headingThree">
                     <h5 class="mb-0">
                         <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Time Report
                         </a>
                     </h5>
                 </div>
 
                 <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="container">
                         <div class="card-body">
-                            <img src="/images/piechart.png" alt="Pie Chart">
+                            <div id="chartContainer"></div>
+                           <!-- <img src="/images/piechart.png" alt="Pie Chart"> -->
                         </div>
+                    </div>
                 </div>
 
             </div>
 
+            
+            
             <script src="./js/jquery-3.2.1.min.js"></script>
+            
             <script src="./js/popper.min.js"></script>
+            
             <script src="./js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
             <script type="text/javascript" src="js/scripts.js"></script>
             <link href="./css/bootstrap.min.css" rel="stylesheet">
             <link href="./css/DisplayTop3.css" rel="stylesheet">
