@@ -3,30 +3,29 @@ function popSubCategory() {
 
     switch ($('#mainCategory').find(":selected").text()) {
         case "Enhancement":
-            jsonFileName = "./data/Enhcategory.json";
+            jsonFileName = "../data/Enhcategory.json";
             break;
         case "Admin":
-            jsonFileName = "./data/Admin.json";
+            jsonFileName = "../data/Admin.json";
             break;
         case "Project":
-            jsonFileName = "./data/Project.json";
+            jsonFileName = '../data/Project.json';
             break;
         case "Service Request":
-            jsonFileName = "./data/ServiceRequest.json";
+            jsonFileName = "../data/ServiceRequest.json";
             break;
         default:
             break;
     }
 
-    $.getJSON(jsonFileName, function (json) {
+    $('#subcatselect').find('option').remove();
 
-        for (var i = 0; i < json.length; i++) {
-            //do something
-        }
+    $.getJSON(jsonFileName, function (data) {
+        var options = data.options
 
-        $.each(json, function (index, item) {
-            $("#subcatselect").append("<option value=" + index + ">" + item + "</option>");
-        });
+        $.each(options, function (key, value) {
+            $('#subcatselect').append('<option value="">' + value.option + '</option>')
+        })
     });
 }
 

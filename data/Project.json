@@ -1,6 +1,16 @@
-{ // Top3
-    "prj1": "2017 Tech Summit",
-    "prj2": "Catalog Cutover",
-    "prj3": "AS400 Failover",
-    "prj4": "H2 Corporate Office"
+{
+    "options": [
+        {
+            "option": "2017 Tech Summit"
+        },
+        {
+            "option": "Catalog Cutover"
+        },
+        {
+            "option": "AS400 Failover"
+        },
+        {
+            "option": "H2 Corporate Office"
+        }
+    ]
 }

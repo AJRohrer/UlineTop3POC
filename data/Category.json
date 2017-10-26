@@ -1,6 +1,16 @@
-{ // Top3
-    "cat1": "Enhancement",
-    "cat2": "Admin",
-    "cat3": "Project",
-    "cat4": "Service Request"
+{
+    "options": [
+        {
+            "option": "PTO"
+        },
+        {
+            "option": "Holiday"
+        },
+        {
+            "option": "General Admin"
+        },
+        {
+            "option": "Team Meetings"
+        }
+    ]
 }
