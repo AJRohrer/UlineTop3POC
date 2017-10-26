@@ -18,6 +18,17 @@ function popSubCategory() {
             break;
     }
 
+    $('#subcatselect').click(function(){
+        $.getJSON(jsonFileName, function(data) {
+            countries = data['countries']
+
+            $.each(countries, function(id, country) {
+                $('select').append('<option value="">' + country["countryName"]+'</option>')
+            })
+        });
+    })
+
+
     $.getJSON(jsonFileName, function (json) {
 
         for (var i = 0; i < json.length; i++) {

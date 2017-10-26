@@ -1,6 +1,16 @@
-{ // Top3
-    "enh1": "Enhancement-WEB",
-    "enh2": "Enhancement-WEB",
-    "enh3": "Enhancement-WEB",
-    "enh4": "Enhancement-WEB"
+{
+    "enhancement": [
+        {
+            "enhancement": "Enhancement-WEB"
+        },
+        {
+            "enhancement": "Enhancement-CIR"
+        },
+        {
+            "enhancement": "Enhancement-FIN"
+        },
+        {
+            "enhancement": "Enhancement-PUR"
+        }
+    ]
 }

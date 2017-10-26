@@ -1,6 +1,16 @@
-{ // Top3
-    "prj1": "2017 Tech Summit",
-    "prj2": "Catalog Cutover",
-    "prj3": "AS400 Failover",
-    "prj4": "H2 Corporate Office"
+{
+    "project": [
+        {
+            "project": "2017 Tech Summit"
+        },
+        {
+            "project": "Catalog Cutover"
+        },
+        {
+            "project": "AS400 Failover"
+        },
+        {
+            "project": "H2 Corporate Office"
+        }
+    ]
 }

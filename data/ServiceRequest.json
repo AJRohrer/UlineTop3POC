@@ -1,6 +1,16 @@
-{ // Top3
-    "svc1": "Svc Request-WEB",
-    "svc2": "Svc Request-CRE",
-    "svc3": "Svc Request-CIR",
-    "svc4": "Svc Request-FIN"
+{
+    "ServiceRequest": [
+        {
+            "servicerequest": "Svc Request-WEB"
+        },
+        {
+            "servicerequest": "Svc Request-CRE"
+        },
+        {
+            "servicerequest": "Svc Request-CIR"
+        },
+        {
+            "servicerequest": "Svc Request-FIN"
+        }
+    ]
 }
