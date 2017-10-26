@@ -1,4 +1,4 @@
-﻿var cacheName = 'Top3-v1.0';
+﻿var cacheName = 'Top3-v2.0';
 var filesToCache = [
     '/',
     '/index.html',
@@ -7,7 +7,6 @@ var filesToCache = [
     '/js/scripts.js',
     '/js/bootstrap.min.js',
     '/js/bootstrap.bundle.min.js',
-    '/css/inline.css',
     '/css/bootstrap-reboot.css',
     '/css/bootstrap-reboot.min.css',
     '/css/DailyTableFormat.css',
