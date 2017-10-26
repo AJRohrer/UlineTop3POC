@@ -8,7 +8,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/user/add", function (req, res) {
-    var top3Info = req.body.data;
+    var top3Info = req.body;
     console.log(top3Info)
     res.send("OK");
 });

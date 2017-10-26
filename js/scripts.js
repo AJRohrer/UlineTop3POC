@@ -63,7 +63,7 @@ $(document).ready(function () {
 })();
 
 //Assign an event function to the form variable.
-var form = document.getElementById("top3Form");
+/*var form = document.getElementById("top3Form");
 form.onsubmit = function (e) {
     // stop the regular form submission
     e.preventDefault();
@@ -88,4 +88,4 @@ form.onsubmit = function (e) {
     xhr.onloadend = function () {
         // done
     };
-};
+};*/
