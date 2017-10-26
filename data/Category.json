@@ -1,16 +1,16 @@
 {
-    "categories": [
+    "options": [
         {
-            "category": "PTO"
+            "option": "PTO"
         },
         {
-            "category": "Holiday"
+            "option": "Holiday"
         },
         {
-            "category": "General Admin"
+            "option": "General Admin"
         },
         {
-            "category": "Team Meetings"
+            "option": "Team Meetings"
         }
     ]
 }

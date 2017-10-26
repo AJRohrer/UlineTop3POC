@@ -1,16 +1,16 @@
 {
-    "project": [
+    "options": [
         {
-            "project": "2017 Tech Summit"
+            "option": "2017 Tech Summit"
         },
         {
-            "project": "Catalog Cutover"
+            "option": "Catalog Cutover"
         },
         {
-            "project": "AS400 Failover"
+            "option": "AS400 Failover"
         },
         {
-            "project": "H2 Corporate Office"
+            "option": "H2 Corporate Office"
         }
     ]
 }

@@ -1,16 +1,16 @@
 {
-    "ServiceRequest": [
+    "options": [
         {
-            "servicerequest": "Svc Request-WEB"
+            "option": "Svc Request-WEB"
         },
         {
-            "servicerequest": "Svc Request-CRE"
+            "option": "Svc Request-CRE"
         },
         {
-            "servicerequest": "Svc Request-CIR"
+            "option": "Svc Request-CIR"
         },
         {
-            "servicerequest": "Svc Request-FIN"
+            "option": "Svc Request-FIN"
         }
     ]
 }

@@ -1,16 +1,16 @@
 {
-    "enhancement": [
+    "options": [
         {
-            "enhancement": "Enhancement-WEB"
+            "option": "Enhancement-WEB"
         },
         {
-            "enhancement": "Enhancement-CIR"
+            "option": "Enhancement-CIR"
         },
         {
-            "enhancement": "Enhancement-FIN"
+            "option": "Enhancement-FIN"
         },
         {
-            "enhancement": "Enhancement-PUR"
+            "option": "Enhancement-PUR"
         }
     ]
 }
