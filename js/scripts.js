@@ -1,7 +1,7 @@
 function popSubCategory() {
     var jsonFileName = "";
 
-    switch ($('#mainCategory').find(":selected").text()) {
+    switch ($('#projectCategory').find(":selected").text()) {
         case "Enhancement":
             jsonFileName = "../data/Enhcategory.json";
             break;
@@ -18,13 +18,13 @@ function popSubCategory() {
             break;
     }
 
-    $('#subcatselect').find('option').remove();
+    $('#projectSubCategory').find('option').remove();
 
     $.getJSON(jsonFileName, function (data) {
         var options = data.options
 
         $.each(options, function (key, value) {
-            $('#subcatselect').append('<option value="">' + value.option + '</option>')
+            $('#projectSubCategory').append('<option value="">' + value.option + '</option>')
         })
     });
 }
@@ -47,10 +47,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     var dateString = '';
-    dateString = new Date().getMonth();
-    dateString += '/' + new Date().getDay();
-    dateString += '/' + new Date().getFullYear();
-    $('#date').attr("value", dateString);
+    dateString = new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate();
+    $('#itemDate').val(dateString);
 });
 
 (function () {

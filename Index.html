@@ -66,11 +66,11 @@
                                             </div>
                                             <div class="row my-1">
                                                 <label class="col-12 col-md-4">Ticket Number:</label>
-                                                <input class="col-12 col-md-8" id="ticketnumber" name="ticketnumber" type="text" placeholder="Enter Ticket Number...">
+                                                <input class="col-12 col-md-8" id="ticketNumber" name="ticketNumber" type="text" placeholder="Enter Ticket Number...">
                                             </div>
                                             <div class="row my-1">
                                                 <label class="col-12 col-md-4">Category:</label>
-                                                <select id="mainCategory" class="col-12 col-md-8" onchange="popSubCategory()">
+                                                <select id="projectCategory" name="projectCategory" class="col-12 col-md-8" onchange="popSubCategory()">
                                                     <option selected="selected">Enhancement</option>
                                                     <option>Admin</option>
                                                     <option>Project</option>
@@ -79,7 +79,7 @@
                                             </div>
                                             <div class="row my-1">
                                                 <label class="col-12 col-md-4">Sub Category:</label>
-                                                <select id="subcatselect" class="col-12 col-md-8">
+                                                <select id="projectSubCategory" name="projectSubCategory" class="col-12 col-md-8">
                                                     <option selected="selected">Enhancement-WEB</option>
                                                     <option>Enhancement-CRE</option>
                                                     <option>Enhancement-FIN</option>
@@ -92,23 +92,23 @@
                                             </div>
                                             <div class="row my-1">
                                                 <label class="col-12 col-md-4">Date:</label>
-                                                <input type="date" id="itemdate" name="itemdate" class="col-12 col-md-8">
+                                                <input type="date" id="itemDate" name="itemDate" class="col-12 col-md-8">
                                             </div>
                                             <div class="row my-1">
                                                 <label class="col-12 col-md-4">Original Due Date:</label>
-                                                <input type="date" id="originaldate" name="originaldate" class="col-12 col-md-8">
+                                                <input type="date" id="originalDueDate" name="originalDueDate" class="col-12 col-md-8">
                                             </div>
                                             <div class="row my-1">
                                                 <label class="col-12 col-md-4">Revised Due Date:</label>
-                                                <input type="date" id="reviseddate" name="reviseddate" class="col-12 col-md-8">
+                                                <input type="date" id="revisedDueDate" name="revisedDueDate" class="col-12 col-md-8">
                                             </div>
                                             <div class="row my-1">
                                                 <label class="col-12 col-md-4">Revised Reason:</label>
-                                                <input class="col-12 col-md-8" id="revisedreason" name="revisedreason" type="text" placeholder="Enter reason...">
+                                                <input class="col-12 col-md-8" id="revisedDueDateReason" name="revisedDueDateReason" type="text" placeholder="Enter reason...">
                                             </div>
                                             <div class="row my-1">
                                                 <label class="col-12 col-md-4">Employee Followup:</label>
-                                                <input class="col-12 col-md-8" id="employeefollowup" name="employeefollowup" type="text" placeholder="Enter followup description...">
+                                                <input class="col-12 col-md-8" id="empFollowup" name="empFollowup" type="text" placeholder="Enter followup description...">
                                             </div>
                                             <div class="row mt-4">
                                                 <div class="col-5 offset-1 col-md-4 offset-md-2">
