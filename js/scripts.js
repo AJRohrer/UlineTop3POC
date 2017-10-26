@@ -3,41 +3,29 @@ function popSubCategory() {
 
     switch ($('#mainCategory').find(":selected").text()) {
         case "Enhancement":
-            jsonFileName = "./data/Enhcategory.json";
+            jsonFileName = "../data/Enhcategory.json";
             break;
         case "Admin":
-            jsonFileName = "./data/Admin.json";
+            jsonFileName = "../data/Admin.json";
             break;
         case "Project":
-            jsonFileName = "./data/Project.json";
+            jsonFileName = '../data/Project.json';
             break;
         case "Service Request":
-            jsonFileName = "./data/ServiceRequest.json";
+            jsonFileName = "../data/ServiceRequest.json";
             break;
         default:
             break;
     }
 
-    $('#subcatselect').click(function(){
-        $.getJSON(jsonFileName, function(data) {
-            countries = data['countries']
+    $('#subcatselect').find('option').remove();
 
-            $.each(countries, function(id, country) {
-                $('select').append('<option value="">' + country["countryName"]+'</option>')
-            })
-        });
-    })
+    $.getJSON(jsonFileName, function (data) {
+        var options = data.options
 
-
-    $.getJSON(jsonFileName, function (json) {
-
-        for (var i = 0; i < json.length; i++) {
-            //do something
-        }
-
-        $.each(json, function (index, item) {
-            $("#subcatselect").append("<option value=" + index + ">" + item + "</option>");
-        });
+        $.each(options, function (key, value) {
+            $('#subcatselect').append('<option value="">' + value.option + '</option>')
+        })
     });
 }
 
