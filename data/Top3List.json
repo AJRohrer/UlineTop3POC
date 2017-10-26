@@ -1,49 +1,47 @@
 {
-  "Top3s": [
-    {
-      "top3Id": 1,
-      "username": "john.doe",
-      "itemDate": "2017-10-24T00:00:00+00:00",
-      "rank": 1,
-      "ticketNumber": "",
-      "description": "Developer Team Meeting",
-      "projectCategory": "Admin",
-      "projectSubCategory": "Team Meetings",
-      "hours": 1,
-      "empFollowup": "",
-      "originalDueDate": "2017-10-24T00:00:00+00:00",
-      "revisedDueDate": "2017-11-01T14:04:12.1275873+00:00",
-      "revisedDueDateReason": "Needed more time"
-    },
-    {
-      "top3Id": 2,
-      "username": "john.doe",
-      "itemDate": "2017-10-24T00:00:00+00:00",
-      "rank": 2,
-      "ticketNumber": "12345678",
-      "description": "Convert TextBox to Drop Down List for Order Form",
-      "projectCategory": "Project",
-      "projectSubCategory": "Order Form 2.0 Project",
-      "hours": 3.5,
-      "empFollowup": "",
-      "originalDueDate": "2017-10-29T14:04:12.1275873+00:00",
-      "revisedDueDate": "2017-11-01T14:04:12.1275873+00:00",
-      "revisedDueDateReason": "Needed more time"
-    },
-    {
-      "top3Id": 3,
-      "username": "john.doe",
-      "itemDate": "2017-10-24T00:00:00+00:00",
-      "rank": 3,
-      "ticketNumber": "55555555",
-      "description": "Fix issue with Canada Orders",
-      "projectCategory": "Project",
-      "projectSubCategory": "Order Form 2.0 Project",
-      "hours": 3.5,
-      "empFollowup": "",
-      "originalDueDate": "2017-10-27T14:04:12.1275873+00:00",
-      "revisedDueDate": "2017-11-01T14:04:12.1275873+00:00",
-      "revisedDueDateReason": "Needed more time"
-    }
-  ]
+	"Top3s": [{
+		"top3Id": 1,
+		"username": "john.doe",
+		"itemDate": "2017-10-24T00:00:00+00:00",
+		"rank": 1,
+		"ticketNumber": "",
+		"description": "Developer Team Meeting",
+		"projectCategory": "Admin",
+		"projectSubCategory": "Team Meetings",
+		"hours": 1,
+		"empFollowup": "",
+		"originalDueDate": "2017-10-24T00:00:00+00:00",
+		"revisedDueDate": "2017-11-01T14:04:12.1275873+00:00",
+		"revisedDueDateReason": "Needed more time"
+	},
+	{
+		"top3Id": 2,
+		"username": "john.doe",
+		"itemDate": "2017-10-24T00:00:00+00:00",
+		"rank": 2,
+		"ticketNumber": "12345678",
+		"description": "Convert TextBox to Drop Down List for Order Form",
+		"projectCategory": "Project",
+		"projectSubCategory": "Order Form 2.0 Project",
+		"hours": 3.5,
+		"empFollowup": "",
+		"originalDueDate": "2017-10-29T14:04:12.1275873+00:00",
+		"revisedDueDate": "2017-11-01T14:04:12.1275873+00:00",
+		"revisedDueDateReason": "Needed more time"
+	},
+	{
+		"top3Id": 3,
+		"username": "john.doe",
+		"itemDate": "2017-10-24T00:00:00+00:00",
+		"rank": 3,
+		"ticketNumber": "55555555",
+		"description": "Fix issue with Canada Orders",
+		"projectCategory": "Project",
+		"projectSubCategory": "Order Form 2.0 Project",
+		"hours": 3.5,
+		"empFollowup": "",
+		"originalDueDate": "2017-10-27T14:04:12.1275873+00:00",
+		"revisedDueDate": "2017-11-01T14:04:12.1275873+00:00",
+		"revisedDueDateReason": "Needed more time"
+	}]
 }

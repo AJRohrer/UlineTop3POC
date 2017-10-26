@@ -96,3 +96,48 @@ form.onsubmit = function (e) {
     };
 
 };
+
+const Top3Item = ({ itemDate, rank, projectCategory, projectSubCategory, hours, originalDueDate, description }) => `
+    <div class="container" >
+        <div class="card card-body bg-light">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <span class="label">Date: </span>
+                    <span id="itemDate">${itemDate.substr(0,10)}</span>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <span class="label">Rank:</span>
+                    <span id="rank">${rank}</span>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <span class="label">Project:</span>
+                    <span id="projectCategory">${projectCategory}</span> -
+                                            <span id="projectSubCategory">${projectSubCategory}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <span class="label">Hours: </span>
+                    <span id="hours">${hours}</span>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <span class="label">Due Date: </span>
+                    <span id="originalDueDate">${originalDueDate.substr(0, 10)}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <span class="label">Description: </span>
+                    <span id="description">${description}</span>
+                </div>
+            </div>
+        </div>
+   </div >
+
+`;
+(function () {
+    $.getJSON("/data/Top3List.json", function (data) {
+        $('#top3container').html(data.Top3s.map(Top3Item).join(''));
+    });
+
+})();
