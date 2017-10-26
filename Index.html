@@ -36,7 +36,7 @@
     <section id="addForm">
         <article>
             <div class="container pt-3">
-                <form action="/user/add" method="POST" class="card">
+                <form action="/user/add" method="POST" class="card" name="top3Form" id="top3Form">
                     <div class="container">
                         <div class="row card-header">
                             <h1 class="centerthis">Add Top 3 Item</h1>
@@ -44,11 +44,11 @@
                         <div class="card-body m-1">
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Description:</label>
-                                <input class="col-12 col-md-8" type="text" placeholder="Enter description...">
+                                <input class="col-12 col-md-8" id="description" name="description" type="text" placeholder="Enter description...">
                             </div>
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Ticket Number:</label>
-                                <input class="col-12 col-md-8" type="text" placeholder="Enter Ticket Number...">
+                                <input class="col-12 col-md-8" id="ticketnumber" name="ticketnumber" type="text" placeholder="Enter Ticket Number...">
                             </div>
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Category:</label>
@@ -73,27 +73,27 @@
                             </div>
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Hours:</label>
-                                <select id="hours" class="col-12 col-md-8"></select>
+                                <select id="hours" name="hours" class="col-12 col-md-8"></select>
                             </div>
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Date:</label>
-                                <input type="date" id="date" class="col-12 col-md-8">
+                                <input type="date" id="itemdate" name="itemdate" class="col-12 col-md-8">
                             </div>
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Original Due Date:</label>
-                                <input type="date" id="date" class="col-12 col-md-8">
+                                <input type="date" id="originaldate" name="originaldate" class="col-12 col-md-8">
                             </div>
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Revised Due Date:</label>
-                                <input type="date" id="date" class="col-12 col-md-8">
+                                <input type="date" id="reviseddate" name="reviseddate" class="col-12 col-md-8">
                             </div>
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Revised Reason:</label>
-                                <input class="col-12 col-md-8" type="text" placeholder="Enter reason...">
+                                <input class="col-12 col-md-8" id="revisedreason" name="revisedreason" type="text" placeholder="Enter reason...">
                             </div>
                             <div class="row my-1">
                                 <label class="col-12 col-md-4">Employee Followup:</label>
-                                <input class="col-12 col-md-8" type="text" placeholder="Enter followup description...">
+                                <input class="col-12 col-md-8" id="employeefollowup" name="employeefollowup" type="text" placeholder="Enter followup description...">
                             </div>
                             <div class="row mt-4">
                                 <div class="col-5 offset-1 col-md-4 offset-md-2">
