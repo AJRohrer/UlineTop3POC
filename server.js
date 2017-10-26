@@ -27,7 +27,7 @@ app.post("/user/add", function (req, res) {
     fs.readFile('./data/Top3List.json', req, res, function readFileCallback(err, data) {
         if (err) {
             console.log(err);
-            res.send(err);
+            res.send("Failed to Add Entry");
         } else {
             obj = JSON.parse(data);
             var length = obj.Top3s.length - 1;
@@ -42,7 +42,7 @@ app.post("/user/add", function (req, res) {
                     console.log("JSON successfully appended");
                 }
             });
-            res.send(json);
+            res.send("Entry Added Successfully");
         }
     });
 });
