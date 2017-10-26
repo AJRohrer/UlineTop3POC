@@ -5,6 +5,9 @@ var fs = require("fs");
 
 app.use(bodyParser.json());
 
+app.get("/top3List", function(req, res){
+    res.send('./data/Top3List.json')
+});
 /* serves main page */
 app.get("/", function (req, res) {
     res.sendfile('index.html')
