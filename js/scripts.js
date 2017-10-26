@@ -63,7 +63,7 @@ $(document).ready(function () {
 })();
 
 //Assign an event function to the form variable.
-/*var form = document.getElementById("top3Form");
+var form = document.getElementById("top3Form");
 form.onsubmit = function (e) {
     // stop the regular form submission
     e.preventDefault();
@@ -83,9 +83,16 @@ form.onsubmit = function (e) {
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
     // send the collected data as JSON
-    xhr.send(JSON.stringify(data));
+    var blah = xhr.send(JSON.stringify(data));
 
     xhr.onloadend = function () {
         // done
     };
-};*/
+
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            document.write(xhr.response); //Outputs a DOMString by default
+        }
+    };
+
+};

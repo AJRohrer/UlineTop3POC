@@ -3,13 +3,15 @@ var app = express();
 var bodyParser = require('body-parser');
 var fs = require("fs");
 
+app.use(bodyParser.json());
+
 /* serves main page */
 app.get("/", function (req, res) {
     res.sendfile('index.html')
 });
 
 app.post("/user/add", function (req, res) {
-    var top3Info = req.body;
+    var top3Info = req.body.hours;
     console.log(top3Info)
 
     var obj = new Object();
@@ -18,6 +20,10 @@ app.post("/user/add", function (req, res) {
     };
 
     var json = JSON.stringify(obj);
+
+    fs.writeFile('./testout',String(top3Info),'utf8', function(err){
+        //do nothing
+    });
 
     fs.readFile('./data/Top3List.json', function readFileCallback(err, data) {
         if (err) {
@@ -35,7 +41,7 @@ app.post("/user/add", function (req, res) {
             });
         }
     });
-    res.send(json);
+    res.send('Hello');
 });
 
 /* serves all the static files */

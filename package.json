@@ -12,6 +12,7 @@
     "name": "Andrew.Rohrer"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "popper.js": "^1.12.6"
   }
 }
