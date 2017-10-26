@@ -24,13 +24,10 @@ app.post("/user/add", function (req, res) {
 
     var json = JSON.stringify(obj);
 
-    fs.writeFile('./testout',String(top3Info),'utf8', function(err){
-        //do nothing
-    });
-
-    fs.readFile('./data/Top3List.json', function readFileCallback(err, data) {
+    fs.readFile('./data/Top3List.json', req, res, function readFileCallback(err, data) {
         if (err) {
             console.log(err);
+            res.send(err);
         } else {
             obj = JSON.parse(data);
             var length = obj.Top3s.length - 1;
@@ -45,9 +42,9 @@ app.post("/user/add", function (req, res) {
                     console.log("JSON successfully appended");
                 }
             });
+            res.send(json);
         }
     });
-    res.send(json);
 });
 
 /* serves all the static files */
