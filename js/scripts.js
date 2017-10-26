@@ -114,7 +114,8 @@ form.onsubmit = function (e) {
 
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
-            document.write(xhr.response); //Outputs a DOMString by default
+            $('#alertSuccess').html(xhr.response)
+            $('#alertSuccess').show()
         }
     };
 
@@ -162,5 +163,4 @@ const Top3Item = ({ itemDate, rank, projectCategory, projectSubCategory, hours, 
     $.getJSON("/data/Top3List.json", function (data) {
         $('#top3container').html(data.Top3s.map(Top3Item).join(''));
     });
-
 })();
