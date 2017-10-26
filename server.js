@@ -34,7 +34,7 @@ app.post("/user/add", function (req, res) {
             var lastElem = obj.Top3s[length].top3Id + 1;
             top3Info.top3Id = lastElem;
             obj.Top3s.push(top3Info);
-            json = JSON.stringify(obj);
+            json = JSON.stringify(obj, null, '\t');
             fs.writeFile('./data/Top3List.json', json, 'utf8', function (err) {
                 if (err) {
                     console.log(err);
