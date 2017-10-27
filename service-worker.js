@@ -1,4 +1,4 @@
-﻿var cacheName = 'Top3-v2.0';
+﻿var cacheName = 'Top3-v3.0';
 var filesToCache = [
     '/',
     '/index.html',

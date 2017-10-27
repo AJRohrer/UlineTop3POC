@@ -116,6 +116,9 @@ form.onsubmit = function (e) {
         if (xhr.readyState === 4) {
             $('#alertSuccess').html(xhr.response)
             $('#alertSuccess').show()
+            $.getJSON("/data/Top3List.json", function (data) {
+                $('#top3container').html(data.Top3s.map(Top3Item).join(''));
+            });
         }
     };
 
