@@ -9,7 +9,7 @@ app.get("/top3List", function(req, res){
     res.send('./data/Top3List.json')
 });
 /* serves main page */
-app.get("/", function (req, res) {
+app.get("/public", function (req, res) {
     res.sendfile('index.html')
 });
 
