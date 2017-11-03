@@ -1,1 +1,1 @@
-web: Index.html
+web: node Index.html
