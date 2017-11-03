@@ -54,7 +54,6 @@ app.get(/^(.+)$/, function (req, res) {
     res.sendfile(__dirname + req.params[0]);
 });
 
-var port = process.env.PORT || 1337;
-app.listen(port, function () {
-    console.log("Listening on " + port);
+app.listen(process.env.PORT, function () {
+    console.log("Listening on " + process.env.PORT || 1337);
 });
